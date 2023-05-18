@@ -1,0 +1,8 @@
+18-May-2023  19-48, ETL job started
+18-May-2023  19-48, Extract phase started
+18-May-2023  19-48, Extract phase ended
+18-May-2023  19-48, Transform phase started
+18-May-2023  19-48, Transform phase ended
+18-May-2023  19-48, Load phase started
+18-May-2023  19-48, Load phase ended
+18-May-2023  19-48, ETL job ended
