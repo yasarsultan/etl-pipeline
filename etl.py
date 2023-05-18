@@ -4,7 +4,7 @@ import pandas as pd
 import xml.etree.ElementTree as ET
 from datetime import datetime
 
-#tmpfile = "temp.tmp"            #file to store all extracted data
+# result files
 logfile = "logfile.txt"         #file to store all log events
 targetfile = "transformed.csv"  #file to store transformed data
 
@@ -46,10 +46,7 @@ def extract():
     
     return extracted_data
 
-# # check
-# data = extract()
-# print(data)
-
+# Transforming data
 def transform(dataset):
     # Converting inches to meters *one inch=0.0254 meter
     dataset['height']= round(dataset.height * 0.0254, 2)
@@ -59,11 +56,7 @@ def transform(dataset):
 
     return dataset
 
-## check
-# res = transform(data)
-# print(res)
-
-# Load all the data into a desired file
+# Loading data to a desired file type
 def load(target_file, data):
     data.to_csv(target_file)
 
